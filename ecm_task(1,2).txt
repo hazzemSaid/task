@@ -1,0 +1,204 @@
+/*            day 1 task 1    */
+
+/*
+problem #1
+let sum=0;
+while(sum<100){
+let num = prompt();
+num = parseInt(num);
+if(!isNaN(num)){
+    if(num==0)break;
+    else sum+=num;
+}
+else console.log("unvalid input ");
+ 
+}
+console.log(sum);
+*/
+ 
+JavaScript Fundamentals Day2
+
+/*         day 2 task string   */
+/*
+1.1 ->plindrom
+function plindrom(str){
+    str2=str.split("").reverse().join("");
+    return (str==str2);
+    
+}
+console.log(plindrom("NOON"));
+*/
+
+/*
+1.2 -> count 'e' in string
+str=prompt();
+cnt=0;
+for(i in str){
+   if(str[i]=='e')++cnt;
+}
+console.log(cnt);
+*/
+
+
+/*
+1.3 ->info from user
+task 2 day 2 
+function NAME(){
+        Name =prompt("your name is");
+for(i in Name){
+    if(Name[i]>='0' && Name[i]<='9'){
+        console.log("NOT valid name ");
+        break;
+    }
+}
+}
+function Phone(){
+    phone=prompt("your phone number");
+    if(phone.length!=8){console.log("NOT valid phone number");return;};
+    for(i in phone){
+    if(phone[i]>='a' && phone[i]<='z'){
+        console.log("NOT valid phone number ");
+       return;
+    }
+    else  if(phone[i]>='A' && phone[i]<='Z'){
+        console.log("NOT valid phone number ");
+       return;
+    }
+}
+}
+function m_number(){
+    //01223661310
+    m=prompt("your mobile number");
+    if(m.length!=11){ console.log("NOT valid mobile number ");return;}
+    if(!(m[0]==0 && m[1]==1 && (m[2]==1 || m[2]==0 || m[2]==2))){
+         console.log("NOT valid mobile number ");
+         return;
+    }
+}
+function Email(){
+    email=prompt("your email");
+    if (email.indexOf(".com") !== -1 || email.indexOf("@") !== -1) {
+    console.log("NOT valid");
+} 
+}
+function info(){
+    NAME();
+    Phone();
+    m_number();
+    Email();
+}
+info();
+*/
+
+/*           Math Objec     */
+
+/*
+2.1 area of circel
+function Area(r){
+    if(isNaN(r)){
+        console.log("NOT valid radius");
+        return;
+    }
+     let area = Math.PI * r**2;
+     return area;
+     
+}
+r=prompt("radius is  ");
+console.log(Area(r));
+*/
+
+/*
+ 2.2 sqrt of n
+function sq(n){
+    if(isNaN(n)){
+          console.log("NOT valid number");
+    }
+    return  Math.sqrt(n);
+}
+n=prompt("num is  ");
+console.log(sq(n));
+*/
+
+
+/*             array    */
+
+
+/*
+
+3.1 
+function Sum(arr){
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+        sum+=parseInt(arr[i]);
+    }
+    console.log(sum);
+}
+function mul(arr){
+    let m=0;
+    for(let i=0;i<arr.length;i++){
+        m*=parseInt(arr[i]);
+    }
+    console.log(m);
+}
+function divv(arr){
+    let d=0;
+    for(let i=0;i<arr.length;i++){
+        d/=parseInt(arr[i]);
+    }
+    console.log(d);
+}
+let arr=[];
+for(let i=0;i<3;i++){
+    arr[i]=prompt("the "+i+" elment in array");
+}
+*/
+
+/*
+3.2 sorting array
+
+let arr=[];
+for(let i=0;i<5;i++){
+    arr[i]=prompt("the "+i+" elment in array");
+}
+arr.sort();
+for(let i=0;i<5;i++){
+    console.log(arr[i]);
+}
+// i can use reverse function (: both it work
+for(let i=4;i>=0;i--){
+    console.log(arr[i]);
+}
+*/
+/*                   function 			  */
+/*
+4.1
+
+function fun(num1, num2) {
+    if (arguments.length !== 2) {
+        console.log("not 2 parameters");
+        return;
+    }
+    
+    
+    console.log("it is 2 parameters");
+}
+
+fun(1,2,3);
+*/
+
+// 4.2 i cant understand what need 
+
+/*
+4.3 reverse function
+function fun_reveser(arr){
+    for(let i =arr.length-1;i>=0;i--){
+        console.log(arr[i]);
+    }
+}
+arr=[];
+arr[0]=0;
+arr[1]=1;
+arr[2]=2;
+arr[3]=3;
+fun_reveser(arr);
+*/
